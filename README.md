@@ -34,3 +34,24 @@
 | exit                   | Sale del shell.                                           | `exit`                                    |
 | help                   | Muestra ayuda para un comando.                            | `help ls`                                 |
 | man <comando>          | Muestra documentación del comando especificado.          | `man ls`                                  |
+| Comando      | Descripción                                              | Ejemplo de uso                                     |
+|--------------|----------------------------------------------------------|----------------------------------------------------|
+| alias        | Crea un alias para un comando.                          | `alias ls="ls -la"`                                |
+| bind         | Asigna una nueva tecla a un comando.                   | `bind '"\C-a":beginning-of-line'`                 |
+| break        | Sale de un bucle while o for.                          | `while true; do echo "Hola"; break; done`         |
+| case         | Comprueba si una cadena coincide con patrones.         | `case $1 in (hola) echo "Hola";; *) echo "Otro";; esac` |
+| continue     | Salta a la siguiente iteración de un bucle.            | `for i in *.txt; do if [ -f $i ]; then continue; fi; echo "Esto no se imprimirá"; done` |
+| do           | Bloque de comandos para un bucle while o for.         | `while true; do echo "Hola"; break; done`         |
+| echo         | Muestra un mensaje en la terminal.                    | `echo "Hola"`                                      |
+| else         | Bloque de comandos para un condicional if.            | `if [ -f archivo.txt ]; then echo "Sí"; else echo "No"; fi` |
+| eval         | Ejecuta un comando como si se hubiera escrito.        | `eval "echo $variable"`                           |
+| export       | Exporta una variable al espacio de nombres.           | `export variable=valor`                           |
+| for          | Itera sobre una lista de valores.                     | `for i in *.txt; do echo $i; done`                |
+| if           | Comprueba si una condición es cierta.                 | `if [ -f archivo.txt ]; then echo "Sí"; else echo "No"; fi` |
+| in           | Comprueba si una cadena está en una lista de cadenas. | `if [[ $cadena in *hola* ]]; then echo "Sí"; fi`  |
+| read         | Lee una entrada del usuario.                          | `read -p "Introduce tu nombre: " nombre; echo "Hola $nombre"` |
+| return       | Sale de un script.                                    | `function saludar { echo "Hola"; return; } saludar` |
+| then         | Bloque de comandos para un condicional if.            | `if [ -f archivo.txt ]; then echo "Sí"; else echo "No"; fi` |
+| until        | Itera sobre una lista hasta que una condición sea cierta. | `until [ -f archivo.txt ]; do echo "Esperando..."; sleep 1; done` |
+| while        | Itera sobre una lista mientras una condición sea cierta. | `while [ -f archivo.txt ]; do echo "Sí"; done`   |
+| while read linea; do echo $linea; done < archivo.txt | Itera sobre las líneas de un archivo. | `while read linea; do echo $linea; done < archivo.txt` |
