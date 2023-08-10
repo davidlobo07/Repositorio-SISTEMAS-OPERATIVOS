@@ -34,8 +34,6 @@
 | exit                   | Sale del shell.                                           | `exit`                                    |
 | help                   | Muestra ayuda para un comando.                            | `help ls`                                 |
 | man <comando>          | Muestra documentación del comando especificado.          | `man ls`                                  |
-| Comando      | Descripción                                              | Ejemplo de uso                                     |
-|--------------|----------------------------------------------------------|----------------------------------------------------|
 | alias        | Crea un alias para un comando.                          | `alias ls="ls -la"`                                |
 | bind         | Asigna una nueva tecla a un comando.                   | `bind '"\C-a":beginning-of-line'`                 |
 | break        | Sale de un bucle while o for.                          | `while true; do echo "Hola"; break; done`         |
